@@ -39,7 +39,7 @@ public class Unit_6
         int[] arr = {0,0,0,0}; 
         //int [] arr = new int[4]; Both lines can be used to declare array
         arr = transform(arr);
-        System.out.println("\nQuestion 2: "+Arrays.toString(arr));
+        System.out.println("\n\n"+Arrays.toString(arr));
         
         /** Question 3 */
         //both code segments compile without error
@@ -56,7 +56,7 @@ public class Unit_6
         {
             ar[x + 1] = ar[x] + ar[x + 1];
         }
-        System.out.println("Question 4: "+Arrays.toString(ar));
+        System.out.println(Arrays.toString(ar));
         
         /** Question 5 */
         int[] a = {4, 3, 2, 1, 0};
@@ -72,7 +72,71 @@ public class Unit_6
                 total -= a[k];
             }
         }
-        System.out.print("Question 5: "+total);
+        System.out.print(+total+"\n");
+        
+        /** Question 8 */
+        int[] numbers = {1, 2, 3, 4, 5, 6};
+        for (int i = 0; i < numbers.length; i++)
+        {
+            System.out.println(numbers[i]);
+        }
+        //the below for loop produces the same output as the for loop above
+        for (int x : numbers)
+        {
+            System.out.println(x);
+        }
+        
+        /** Question 10 */
+        /*The code below will cause an ArrayIndexOutOfBounds Exception
+         * int[] arr = {1, 2, 3, 4, 5};
+         * for (int x = 0; x < arr.length; x++)
+         * {
+         *     System.out.print(arr[x + 3]);
+         *  }
+         * The uncommented code segemnt below will print 45678 
+         */
+        int[] b = {1, 2, 3, 4, 5};
+        for (int x : b)
+        {
+            System.out.print(x + 3);
+        }
+        
+        /** Question 11 */
+        boolean duplicates = false;
+        int[] c = {5,5,6};
+        for (int x = 0; x < c.length - 1; x++)
+        {
+            for (int y = x + 1; y < c.length; y++)
+            {
+                if (c[x] == c[y])
+                {
+                    duplicates = true;
+                    System.out.println("\n"+true);
+                }
+            }
+        }
+        
+        /** Question 12 */
+        int [] numArr = {1, 3, 5, 7, 9};
+        for (int k = 0; k < numArr.length / 2; k++)
+        {
+            int temp = numArr[k];
+            numArr[k] = numArr[numArr.length - k - 1];
+            numArr[numArr.length - k - 1] = temp;
+        }   
+            System.out.println(Arrays.toString(numArr));
+            
+        /** Question 13 */
+        int[] values = {0, 2};
+        int maximum = values[0];
+        for (int k = 1; k < values.length; k++)
+        {
+            if (values[k] > maximum)
+            {
+                maximum = values[k];
+            }
+        }
+            System.out.println(maximum);
     }
 }
 

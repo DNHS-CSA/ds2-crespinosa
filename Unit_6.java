@@ -51,7 +51,8 @@ public class Unit_6
              
         /** Question 4 */
         int[] ar = {10, 20, 30, 40, 50};
-
+        //The code starts with the second element of the array and adds the current 
+        //element to the next element of the array
         for(int x = 1; x < ar.length - 1; x++)
         {
             ar[x + 1] = ar[x] + ar[x + 1];
@@ -106,7 +107,7 @@ public class Unit_6
         int[] c = {5,5,6};
         for (int x = 0; x < c.length - 1; x++)
         {
-            for (int y = x + 1; y < c.length; y++)
+            for (int y = x + 1; y < c.length; y++)//this is the proper for loop header
             {
                 if (c[x] == c[y])
                 {
@@ -118,7 +119,7 @@ public class Unit_6
         
         /** Question 12 */
         int [] numArr = {1, 3, 5, 7, 9};
-        for (int k = 0; k < numArr.length / 2; k++)
+        for (int k = 0; k < numArr.length / 2; k++)//this is the proper for loop header
         {
             int temp = numArr[k];
             numArr[k] = numArr[numArr.length - k - 1];
@@ -128,7 +129,7 @@ public class Unit_6
             
         /** Question 13 */
         int[] values = {0, 2};
-        int maximum = values[0];
+        int maximum = values[0];//this is the proper initial value 
         for (int k = 1; k < values.length; k++)
         {
             if (values[k] > maximum)

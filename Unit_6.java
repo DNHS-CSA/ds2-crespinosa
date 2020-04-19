@@ -39,7 +39,7 @@ public class Unit_6
         int[] arr = {0,0,0,0}; 
         //int [] arr = new int[4]; Both lines can be used to declare array
         arr = transform(arr);
-        System.out.println(Arrays.toString(arr));
+        System.out.println("\nQuestion 2: "+Arrays.toString(arr));
         
         /** Question 3 */
         //both code segments compile without error
@@ -56,7 +56,23 @@ public class Unit_6
         {
             ar[x + 1] = ar[x] + ar[x + 1];
         }
-        System.out.println(Arrays.toString(ar));
+        System.out.println("Question 4: "+Arrays.toString(ar));
+        
+        /** Question 5 */
+        int[] a = {4, 3, 2, 1, 0};
+        int total = 0;
+        for (int k = 0; k <= total; k++)
+        {
+            if (a[k] % 2 == 0)
+            {
+                total += a[k];
+            }
+            else            
+            {
+                total -= a[k];
+            }
+        }
+        System.out.print("Question 5: "+total);
     }
 }
 
